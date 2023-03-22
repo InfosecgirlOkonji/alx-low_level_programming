@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 /**
  *main - print first 50 fibonacci
  *
@@ -19,6 +19,6 @@ int main(void)
 		y = sum;
 
 	}
-	printf("%ld\n", tSum);
+	printf("%d\n", tSum);
 	return (0);
 }
