@@ -1,33 +1,29 @@
 #include "main.h"
 
 /**
- * print_diagonal - entry point
+ * print_square - entry point
  *
- * Description: Prints diagonals
- *@n: number of spaces
+ * Description: Prints square
+ *@size: size of square
  * Return: void
  */
 
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int row, num_lines;
+	int row, column;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (row = 1; row <= n; row++)
+		for (row = 1; row <= size; row++)
 		{
-			if (row > 1)
+			for (column = 1; column <= size; column++)
 			{
-				for (num_lines = 1; num_lines <= row - 1; num_lines++)
-				{
-				_putchar(' ');
-				}
+				_putchar('#');
 			}
-			_putchar('\\');
 			_putchar('\n');
 		}
 	}
